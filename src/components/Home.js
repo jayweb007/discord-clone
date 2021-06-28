@@ -10,6 +10,8 @@ import {
   PlusIcon,
   CogIcon,
 } from "@heroicons/react/solid";
+import { DownloadIcon } from "@heroicons/react/outline";
+import ExploreIcon from "@material-ui/icons/Explore";
 import Channel from "./Channel";
 import ServerIcon from "./ServerIcon";
 import Chat from "./Chat";
@@ -47,6 +49,20 @@ function Home() {
 
           <div className="server-default hover:bg-discord_green hover:rounded-2xl group">
             <PlusIcon
+              className="text-discord_green h-7 
+            group-hover:text-white "
+            />
+          </div>
+          <div className="server-default hover:bg-discord_green hover:rounded-2xl group">
+            {/* <ServerIcon image="/images/explore.png" /> */}
+            <ExploreIcon
+              className="text-discord_green h-7 
+            group-hover:text-white "
+            />
+          </div>
+          <hr className="border border-gray-700 w-8 mx-auto" />
+          <div className="server-default hover:bg-discord_green hover:rounded-2xl group">
+            <DownloadIcon
               className="text-discord_green h-7 
             group-hover:text-white "
             />
